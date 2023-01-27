@@ -21,6 +21,8 @@
  a{
  	text-decoration: none!important;
  }
+ 
+	
 .logo-circle{
 	height: 26px;
 	width: 26px;
@@ -164,14 +166,14 @@
  	color:#ffffff;
  } 
  .header .navbar #collapsibleNavbar .nav-item .nav-link{
- 	color:#ffffff;
- 	font-size: 16px;
- 	text-transform: capitalize;
- 	font-weight: 600;
- 	padding:20px 15px 20px;
- 	line-height: 26px;
- 	opacity:0.6;
- }
+	color:#ffffff;
+	font-size: 16px;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding:20px 15px 20px;
+	line-height: 26px;
+	opacity:0.6;
+}
 
 .header .navbar #collapsibleNavbar .nav-item .nav-link.active{
 	opacity:1;
@@ -215,13 +217,12 @@
 
 .home-section .home-img img{
 	max-width: 1000px;
-	max-height: 900px;
-	height: 900px;
-	width: 1000px;
-	width: 100%;
+	max-height: 850px;
+	height: 850px;
 	position: absolute;
+	max-width: max-content;
 	left: 150px;
-    top:-180px;
+    top:-100px;
     animation: productani01 5s linear infinite;
 }
 
@@ -453,8 +454,8 @@
    transform: translateY(0px);	
 }
 .products-section .product-img img{
+	height: 200px;
 	width: 100%;
-	height: auto;
 	display: block;
 }
 
@@ -828,6 +829,20 @@
 	color:#eeeeee;
 	font-weight: 400;
 }
+ .cadastro{
+	color: #e5ff00;
+    text-transform: capitalize;
+    font-weight: 600;
+    opacity: 0.6;
+	border-radius: 4px ;
+	background-color: #ffb801;
+	color: red;
+	
+	
 
-
-
+}
+a#login{
+	
+	background-color: #ffb801;
+	color: #4213ec;
+	}

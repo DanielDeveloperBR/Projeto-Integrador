@@ -37,7 +37,7 @@
  
  <!-- Header Section Start -->
  <header class="header fixed-top">
-    <div class="container">
+    <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light">
          <!-- Brand -->
          <a class="navbar-brand" href="#"> <span class="logo-circle"></span> Logo</a>
@@ -60,15 +60,21 @@
               <a class="nav-link" href="#features">Funcionalidades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#products">Produtos</a>
+              <a class="nav-link" href="#products">Cardápio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#testimonial">Comentários</a>
             </li>
            
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contatos</a>
+              <a class="nav-link"  href="#contact">Contatos</a>
             </li>
+            <li class="nav-item">
+               <a class="nav-link" id="login"  href="#">Cadastro</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" id="login"  href="php/login.php">Login</a>
+             </li>
          </ul>
        </div>
       </nav>
@@ -96,7 +102,7 @@
             </div>
             <div class="col-lg-6 order-first order-lg-last">
                <div class="home-img">
-                 <img src="img/logo1.png" alt="product">
+                 <img src="img/logo1.png" class="img-fluid" alt="product">
                </div>
             </div>
         </div>
@@ -154,9 +160,10 @@
            <!-- Features Item Start-->
             <div class="col-md-6 col-lg-4 d-flex">
                <div class="col-lg-12 features-item">
-                  <div class="icon"><i class="fas fa-bell"></i></div>
-                  <h3>Notificação</h3>
-                  <p>Aliado na correria do dia a dia, não deixando passar um alerta sequer.</p>
+                  <div class="icon"><i class="fa-face-awesome"> </i>
+                  </div>
+                  <h3>Contato</h3>
+                  <p>Faça seu pedido online em nosso site ou ligue para nós para fazer seu pedido por telefone. Também aceitamos pedidos presenciais em nossa loja.</p>
                </div>
             </div>
            <!-- Features Item End-->
@@ -212,7 +219,7 @@
  <!-- Funcionalidades Section End  -->
 
 
- <!-- Products Section Start -->
+ <!-- Produtos Section Start -->
  <section class="products-section" id="products">
     <div class="container">
         <div class="row justify-content-center">
@@ -241,21 +248,21 @@
                           <span class="new-price">R$25,00</span>
                    
                        </div>
-                       <h5 class="product-name">Promoção 10 sonhos de doce de leite </h5>
+                       <h5 class="product-name">Promoção sonho bom </h5>
                     </div>
                 </div>
             </div>
             <!-- Products Item End -->
             <!-- Products Item Start -->
-            <div class="col-lg-12">
+            <div class="col-lg-12 container-fluid">
                 <div class="products-item">
                     <div class="product-img">
-                       <img class="img-fluid" src="img/sonhos/sonho_com_geleia.png" alt="product">
+                       <img class="img-fluid" src="img/sonhos/sonho-com-geleia.jpg" alt="product">
                        <div class="overlay d-flex">
                          <a href="#" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
-                    <div class="product-content">
+                    <div class="product-content container-fluid">
                        <div class="product-price">
                           <span class="new-price">R$12,00</span>
                        
@@ -317,7 +324,7 @@
                           <span class="new-price">R$15,00</span>
                          
                        </div>
-                       <h5 class="product-name">Sonho de doce de morango</h5>
+                       <h5 class="product-name">Sonho de morango</h5>
                     </div>
                 </div>
             </div>
@@ -440,13 +447,13 @@
                 <!-- Section Title End -->
             </div>
         </div>
-        <!--form action="https://formsubmit.co/herbert.hpzerro@gmail.com"  onsubmit="Salvar()" method="POST"-->
-         <form action="https://formsubmit.co/quesonhobom@gmail.com" method="POST">
+        <!--form action="https://formsubmit.co/youremail@gmail.com"  onsubmit="Salvar()" method="POST"-->
+         <form action="https://formsubmit.co/tecinfsenac12751@gmail.com" method="POST">
          <!--Desabilitar captcha-->
          <input type="hidden" name="_captcha" value="false" style="display: none;">
          <!--Desabilitar captcha-->
          <!--não ir para outra pagina-->
-         <input type="hidden" name="_next" value="http://localhost:5500/index.html" style="display: nome;">
+         <input type="hidden" name="_next" value="https://danieldeveloperbr.github.io/Projeto-Integrador/" style="display: nome;">
          <!--não ir para outra pagina-->
          <!--Evitar spawm-->
          <input type="text" name="_honey" style="display:none">
