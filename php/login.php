@@ -34,11 +34,13 @@ if(isset($_POST['email'])){
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="" method="post">
+    <
+    <form action="" method="post" id="modal" class="animar"> 
+        <h1>Login</h1>
         <p>
           <label for="email">E-mail</label> 
           <input type="text" name="email">

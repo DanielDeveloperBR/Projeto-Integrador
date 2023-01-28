@@ -829,20 +829,23 @@
 	color:#eeeeee;
 	font-weight: 400;
 }
- .cadastro{
-	color: #e5ff00;
+ #cadastro{
+
     text-transform: capitalize;
     font-weight: 600;
     opacity: 0.6;
-	border-radius: 4px ;
-	background-color: #ffb801;
-	color: red;
+	border-radius: 25px ;
+	background-color: #cc01ff;
 	
 	
 
 }
-a#login{
+#login{
+
+    text-transform: capitalize;
+    font-weight: 600;
+    opacity: 0.6;
+	border-radius: 30px ;
+	background-color: #cc01ff;
 	
-	background-color: #ffb801;
-	color: #4213ec;
 	}
