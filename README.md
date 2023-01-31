@@ -1,6 +1,6 @@
 # 💻 Project
 
-Live demo: https://eduardofmarinho.github.io/AX-Relogios/
+Live demo: https://danieldeveloperbr.github.io/Projeto-Integrador/
 
 In this project, I'm developing a landing page for smartwatch store.
 
@@ -12,7 +12,7 @@ In order to open and edit this project, you need to have a Code Editor. (I used 
 
 If you wish to clone this repository using a terminal, type the following command:
 
-$ git clone https://github.com/EduardoFMarinho/AX-Relogios
+$ git clone https://danieldeveloperbr.github.io/Projeto-Integrador/
 
 # Technologies
 
