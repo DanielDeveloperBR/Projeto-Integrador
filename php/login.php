@@ -20,7 +20,7 @@ if(isset($_POST['email'])){
         //capiturando o id do usuario para a session
         $_SESSION['usuario'] = $usuario['id'];
         //redirecionando para index.php
-        header("Location: ../index.html");
+        header("Location: ../teste.php");
         
     } else {
         echo "Falha ao logar! Senha ou e-mail incorretos";
@@ -36,11 +36,12 @@ if(isset($_POST['email'])){
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="" method="post">
+<form action="" method="post" id="modal" class="animar">     
+<h1>Login</h1>
         <p>
           <label for="email">E-mail</label> 
           <input type="text" name="email">
@@ -49,7 +50,7 @@ if(isset($_POST['email'])){
           <label for="senha">Senha</label>
           <input type="text" name="senha">
         </p>
-        <button type="submit">Logar</button>
+        <button type="submit" class="log" id="logar" style="display: inline-block;">Prosseguir</button>
     </form> 
     
 </body>
