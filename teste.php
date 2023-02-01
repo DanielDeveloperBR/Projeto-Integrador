@@ -1,3 +1,17 @@
+<?php
+
+
+
+
+
+
+// iniciar a session
+if(!isset($_SESSION)) session_start();
+// verificar se a variavel existe
+if(!isset($_SESSION['usuario']))
+   header('Location: index.html');
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
