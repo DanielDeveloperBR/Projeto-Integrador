@@ -26,32 +26,7 @@
   <link rel="stylesheet" href="css/styleSwitcher.css">
 
 </head>
-<script>
-   // check if user is logged in
-   const isLoggedIn = <?php echo (isset($_SESSION['user'])) ? 1 : 0; ?>;
-   const cadastroBtn = document.getElementById("cadastro");
-   const loginBtn = document.getElementById("login");
 
-   if (isLoggedIn) {
-      // hide the "Cadastro" and "Login" buttons
-      cadastroBtn.style.display = "none";
-      loginBtn.style.display = "none";
-
-      // create the "Logout" button
-      const logoutBtn = document.createElement("a");
-      logoutBtn.className = "nav-link text-dark";
-      logoutBtn.innerHTML = "Logout";
-      logoutBtn.href = "php/logout.php";
-
-      // add the "Logout" button to the navigation bar
-      const navItem = document.createElement("li");
-      navItem.className = "nav-item";
-      navItem.appendChild(logoutBtn);
-
-      const navbar = document.querySelector(".navbar-nav");
-      navbar.appendChild(navItem);
-   }
-</script>
 <body>
 
   <!-- Preloader Start  -->
@@ -96,13 +71,9 @@
             <li class="nav-item">
               <a class="nav-link"  href="#contact">Contatos</a>
             </li>
-          
-        
+ 
              <li class="nav-item">
-               <a class="nav-link text-dark" id="cadastro"  href="php/cadastro.php">Cadastro</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link text-dark"  id="login" href="php/login.php">Login</a>
+               <a class="nav-link text-dark"  id="login" href="php/logout.php">logout</a>
              </li>
             
 

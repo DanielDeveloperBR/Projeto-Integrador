@@ -40,7 +40,7 @@ if(isset($_POST['email'])){
     <title>Document</title>
 </head>
 <body>
-<form action="" method="post" id="modal" class="animar">     
+<form action="teste.php" method="post" id="modal" class="animar">     
 <h1>Login</h1>
         <p>
           <label for="email">E-mail</label> 
