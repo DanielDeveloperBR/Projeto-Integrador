@@ -87,7 +87,7 @@ if(!isset($_SESSION['usuario']))
             </li>
  
              <li class="nav-item">
-               <a class="nav-link text-dark"  id="login" href="php/logout.php">logout</a>
+               <a class="nav-link rounded-circle"  id="login" href="php/logout.php">logout</a>
              </li>
             
 
@@ -114,7 +114,7 @@ if(!isset($_SESSION['usuario']))
                 <div class="home-content">
                    <h1>Que Sonho bom</h1>
                    <p>O famoso sonho, mas não um simples sonho, um sonho com recheio de geleias de frutas. Fugindo um pouco dos sabores tradicionais própria. Vem adquirir o seu!</p>
-                   <a href="#" class="btn mybtn1">Saiba mais</a>
+                   <a href="#products" class="btn mybtn1">Saiba mais</a>
                 </div>
             </div>
             <div class="col-lg-6 order-first order-lg-last">
@@ -256,7 +256,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/promocao de sonhos de doces.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="#" class="btn mybtn1">Comprar</a>
+                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero uma promoção" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -275,7 +275,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/sonho-com-geleia.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="#" class="btn mybtn1">Comprar</a>
+                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de geleia" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content container-fluid">
@@ -294,7 +294,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/sonho-doce-de-leite.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="#" class="btn mybtn1">Comprar</a>
+                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de doce de leite" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -313,7 +313,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/sonho-nutela.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="#" class="btn mybtn1">Comprar</a>
+                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de nutela" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -332,7 +332,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/Sonho-de-geleia-de-morango.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="#" class="btn mybtn1">Comprar</a>
+                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de morango" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">

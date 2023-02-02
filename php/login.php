@@ -1,32 +1,40 @@
 <?php
 
 
-if(isset($_POST['email'])){
 
-     
+if (isset($_POST['email'])) {
+
     include("conexao.php");
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql_code = "SELECT * FROM tb_cadastros WHERE EMAIL = '$email' LIMIT 1";
+    $sql_code = "SELECT * FROM tb_cadastros WHERE email = '$email' LIMIT 1";
     // LIMIT 1 só permite rodar uma vez
     $sql_exec = $mysqli->query($sql_code) or die($mysqli->error);
 
     $usuario = $sql_exec->fetch_assoc();
-    
-    if(password_verify($senha,$usuario['senha'])) {
-        //verificando se a sessão está logada e startando
-        if(!isset($_SESSION)) session_start();
-        //capiturando o id do usuario para a session
-        $_SESSION['usuario'] = $usuario['id'];
-        //redirecionando para index.php
-        header("Location: ../teste.php");
-        
-    } else {
-        echo "Falha ao logar! Senha ou e-mail incorretos";
-    }
 
+
+    $erro = false;
+    if(empty($email)) {
+        $erro = 1;
+    } else if (empty($senha)) {
+        $erro = 1;
+    }
+    if ($erro){
+        echo "<script type='text/javascript'>alert('Email ou senha em branco')</script>";
+    }else if(password_verify($senha, $usuario['senha'])) {
+        if(!isset($_SESSION)) session_start();
+        $_SESSION['usuario'] = $usuario['id'];
+        //echo "Usuário Logado";
+        header('location: ../teste.php');
+    } else {
+        //echo "Falha ao logar! Senha ou e-mail incorretos";
+        echo "<script type='text/javascript'>alert('Email ou senha incorretos')</script>";
+    }
+    
 }
+
 
 ?>
     
@@ -48,9 +56,11 @@ if(isset($_POST['email'])){
         </p>
         <p>
           <label for="senha">Senha</label>
-          <input type="text" name="senha">
+          <input type="password" name="senha">
         </p>
         <button type="submit" class="log" id="logar" style="display: inline-block;">Prosseguir</button>
+        <a href="../index.html" class="log" id="logar" style="display: inline-block;">voltar</a>
+    
     </form> 
     
 </body>

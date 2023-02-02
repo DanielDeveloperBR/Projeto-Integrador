@@ -31,8 +31,7 @@ if(empty($nome)) {
     $erro = "Preencha o e-mail corretamente: Exemplo@gmail.com";
 } else if(empty($numero) || strlen($numero)<0) {
     $erro = "Preencha o número";
-} else if(empty($complemento)) {
-    $erro = "Preencha o complemento";   
+
 } else if(empty($bairro)) {
     $erro = "Preencha o bairro";
 } else if(empty($cidade)) {
@@ -65,7 +64,7 @@ if(empty($nome)) {
     <link rel="stylesheet" href="../css/user.css">
 </head>
 <body>
-    <a href="login.php">Fazer login</a>
+    
     <form action="" method="post" id="modal" class="animar">
         <p>
             <h1>Cadastre-se</h1>
@@ -98,8 +97,11 @@ if(empty($nome)) {
             <input value="<?php if(isset($_POST['cidade'])) echo $_POST['cidade']; ?>"  name="cidade" type="text">
         </p>
         <p>
-            <button type="submit">Cadastrar Cliente</button>
-        </p>
+        <button type="submit" class="log" id="logar" style="display: inline-block;">Prosseguir</button>
+        <a href="../index.html" class="log" id="logar" style="display: inline-block;">voltar</a>
+</p>
+        
+
     </form>
 </body>
 </html>

@@ -47,6 +47,23 @@ body{
    
   }
 
+  #modal a {
+    margin-top: 30px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: .6rem 0rem;
+    width: 9rem;
+    background-color: #ffb801;
+    border-radius: 3px;
+    border: none;
+    text-decoration: none;
+    color: #402d00;
+    text-align: center;
+    
+   
+  }
+
 button:hover{
     filter: brightness(.8);
     
