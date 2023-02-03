@@ -16,11 +16,8 @@
 
  @media(max-width: 991px){
 	#login{
-		border-radius: 5vw;
 		max-width: 100px;
 		text-align: center;
-		max-height: auto;
-
 		max-height: 40px;
 		}
 		#cadastro{
@@ -39,6 +36,10 @@
 
  .header {
  	padding: 5px 0;
+ }
+ .navbar-collapse{
+	margin-top: -70px;
+
  }
  .header .navbar-nav{
 	
