@@ -18,7 +18,7 @@ $ git clone https://danieldeveloperbr.github.io/Projeto-Integrador/
 
 This project was developed with the following technologies:
 
-- HTML, CSS, PHP and Bootstrap.
+- HTML, CSS and Bootstrap
 <!-- - [Expo][expo] -->
 
 # Features

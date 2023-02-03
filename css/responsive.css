@@ -33,12 +33,13 @@
 				size: 16px;
 				margin-top: -35px;
 			}
-
+		
  .header {
  	padding: 5px 0;
  }
+ /*Responsividade do menu*/
  .navbar-collapse{
-	margin-top: -70px;
+	margin-top: -69px;
 
  }
  .header .navbar-nav{
