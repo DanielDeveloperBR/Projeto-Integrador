@@ -1,10 +1,6 @@
 <?php
 
 
-
-
-
-
 // iniciar a session
 if(!isset($_SESSION)) session_start();
 // verificar se a variavel existe
@@ -256,7 +252,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/promocao de sonhos de doces.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero uma promoção" class="btn mybtn1">Comprar</a>
+                         <a href="https://wa.me/5521985027501?text=Olá, Tenho interesse em comprar seu sonho da promoção" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -275,7 +271,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/sonho-com-geleia.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de geleia" class="btn mybtn1">Comprar</a>
+                         <a href="https://wa.me/5521985027501?text=Olá, Tenho interesse em comprar seu sonho com geleia" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content container-fluid">
@@ -294,7 +290,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/sonho-doce-de-leite.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de doce de leite" class="btn mybtn1">Comprar</a>
+                         <a href="https://wa.me/5521985027501?text=Olá, Tenho interesse em comprar seu sonho de doce de leite" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -313,7 +309,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/sonho-nutela.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de nutela" class="btn mybtn1">Comprar</a>
+                         <a href="https://wa.me/5521985027501?text=Olá, Tenho interesse em comprar seu sonho de nutela" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -332,7 +328,7 @@ if(!isset($_SESSION['usuario']))
                     <div class="product-img">
                        <img class="img-fluid" src="img/sonhos/Sonho-de-geleia-de-morango.jpg" alt="product">
                        <div class="overlay d-flex">
-                         <a href="https://api.whatsapp.com/send?1=pt_BRphone=55 21985027501&text=Olá, quero um sonho de morango" class="btn mybtn1">Comprar</a>
+                         <a href="https://wa.me/5521985027501?text=Olá, Tenho interesse em comprar seu sonho de morango" class="btn mybtn1">Comprar</a>
                        </div>
                     </div>
                     <div class="product-content">
@@ -464,12 +460,12 @@ if(!isset($_SESSION['usuario']))
             </div>
         </div>
         <!--form action="https://formsubmit.co/youremail@gmail.com"  onsubmit="Salvar()" method="POST"-->
-         <form action="https://formsubmit.co/tecinfsenac12751@gmail.com" method="POST">
+         <form action="https://formsubmit.co/herbert.hpzerro@gmail.com" onsubmit="Salvar()" method="POST">
          <!--Desabilitar captcha-->
          <input type="hidden" name="_captcha" value="false" style="display: none;">
          <!--Desabilitar captcha-->
          <!--não ir para outra pagina-->
-         <input type="hidden" name="_next" value="https://danieldeveloperbr.github.io/Projeto-Integrador/" style="display: nome;">
+         <input type="hidden" name="_next" value="http://localhost/projeto-integrador-main/teste.php" style="display: nome;">
          <!--não ir para outra pagina-->
          <!--Evitar spawm-->
          <input type="text" name="_honey" style="display:none">
@@ -583,7 +579,11 @@ if(!isset($_SESSION['usuario']))
     </ul>
   </div>
 <!-- Live Style Switcher - demo only End -->
-
+<script>
+    function Salvar() {
+        alert("E-mail enviado com sucesso")
+    }
+ </script>
 
 <!-- Jquery -->
 <script src="js/jquery.min.js"></script>

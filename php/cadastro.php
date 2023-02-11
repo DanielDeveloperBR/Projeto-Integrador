@@ -31,7 +31,6 @@ if(empty($nome)) {
     $erro = "Preencha o e-mail corretamente: Exemplo@gmail.com";
 } else if(empty($numero) || strlen($numero)<0) {
     $erro = "Preencha o número";
-
 } else if(empty($bairro)) {
     $erro = "Preencha o bairro";
 } else if(empty($cidade)) {
@@ -48,6 +47,7 @@ if(empty($nome)) {
         if($deu_certo) {
             echo "<p><b>Cliente cadastrado com sucesso!!!</b></p>";
             unset($_POST); //limpa o conteudo do $_POST
+            header("Location: login.php?sair='sair'");
         }
     }
 

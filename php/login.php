@@ -1,6 +1,8 @@
 <?php
 
-
+if (isset($_GET['sair'])) {
+    echo "Você foi cadastrado com sucesso!";
+}
 
 if (isset($_POST['email'])) {
 
@@ -10,7 +12,8 @@ if (isset($_POST['email'])) {
 
     $sql_code = "SELECT * FROM tb_cadastros WHERE email = '$email' LIMIT 1";
     // LIMIT 1 só permite rodar uma vez
-    $sql_exec = $mysqli->query($sql_code) or die($mysqli->error);
+ 
+    $sql_exec = $mysqli->query($sql_code) or die($mysqli->error());
 
     $usuario = $sql_exec->fetch_assoc();
 
@@ -33,7 +36,7 @@ if (isset($_POST['email'])) {
         echo "<script type='text/javascript'>alert('Email ou senha incorretos')</script>";
     }
     
-}
+ }
 
 
 ?>
