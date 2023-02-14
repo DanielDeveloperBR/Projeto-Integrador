@@ -66,10 +66,10 @@ if(!isset($_SESSION['usuario']))
                <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#about">Sobre nós</a>
+               <a class="nav-link" href="#about">Sobre</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features">Funcionalidades</a>
+              <a class="nav-link" href="#features">Recursos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#products">Cardápio</a>
@@ -108,7 +108,7 @@ if(!isset($_SESSION['usuario']))
         <div class="row">
             <div class="col-lg-6">
                 <div class="home-content">
-                   <h1>Que Sonho bom</h1>
+                   <h1 class="text-warning">Que Sonho bom</h1>
                    <p>O famoso sonho, mas não um simples sonho, um sonho com recheio de geleias de frutas. Fugindo um pouco dos sabores tradicionais própria. Vem adquirir o seu!</p>
                    <a href="#products" class="btn mybtn1">Saiba mais</a>
                 </div>
@@ -162,8 +162,8 @@ if(!isset($_SESSION['usuario']))
            <div class="col-lg-7">
               <!-- Section Title Start -->
               <div class="section-title">
-                  <h1 class="title">Funcionalidades</h1>
-                  <h2 class="subtitle">Além de seu tempo</h2>
+                  <h1 class="title">QUE SONHO BOM</h1>
+                  <h2 class="subtitle">Nossos Recursos</h2>
               </div>
               <!-- Section Title Start End-->
            </div>
@@ -192,7 +192,7 @@ if(!isset($_SESSION['usuario']))
            <!-- Features Item Start-->
             <div class="col-md-6 col-lg-4 d-flex">
                <div class="col-lg-12 features-item">
-                  <div class="icon"><i class="far fa-sticky-note"></i></div>
+                  <div class="icon"><i class="fas fa-pen"></i></div>
                   <h3>Ingredientes</h3>
                   <p>Usamos apenas ingredientes de qualidade superior para garantir o melhor sabor e textura em nossos sonhos de doce leite e geleia.</p>
                </div>
@@ -393,8 +393,8 @@ if(!isset($_SESSION['usuario']))
                     <div class="testi-comment">
                        <p>
                        <i class="fas fa-quote-left"></i> 
-                           Geente... é realmente espetacular! Maravilhoso!<br>
-                           O único problema foi...<br>
+                           Geente... é realmente espetacular!
+                           O único problema foi...
                            Conseguir não comer tudo de uma vez!! Bjs
                        <i class="fas fa-quote-right"></i> 
                        </p>
@@ -465,7 +465,7 @@ if(!isset($_SESSION['usuario']))
          <input type="hidden" name="_captcha" value="false" style="display: none;">
          <!--Desabilitar captcha-->
          <!--não ir para outra pagina-->
-         <input type="hidden" name="_next" value="http://localhost/projeto-integrador-main/teste.php" style="display: nome;">
+         <input type="hidden" name="_next" value="http://localhost/projeto-sonho/teste.php" style="display: nome;">
          <!--não ir para outra pagina-->
          <!--Evitar spawm-->
          <input type="text" name="_honey" style="display:none">
@@ -545,7 +545,7 @@ if(!isset($_SESSION['usuario']))
         <div class="row justify-content-center">
              <div class="col-lg-6">
                 <div class="footer-logo">
-                   <a href="#">Que Sonho Bom</a>
+                   <a href="#" class="text-warning">Que Sonho Bom</a>
                 </div>
                 <div class="footer-text">
                   <p>Nossas redes sociais</p>

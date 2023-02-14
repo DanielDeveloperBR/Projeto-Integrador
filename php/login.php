@@ -17,29 +17,33 @@ if (isset($_POST['email'])) {
 
     $usuario = $sql_exec->fetch_assoc();
 
-
-    $erro = false;
-    if(empty($email)) {
-        $erro = 1;
-    } else if (empty($senha)) {
-        $erro = 1;
-    }
-    if ($erro){
-        echo "<script type='text/javascript'>alert('Email ou senha em branco')</script>";
-    }else if(password_verify($senha, $usuario['senha'])) {
-        if(!isset($_SESSION)) session_start();
-        $_SESSION['usuario'] = $usuario['id'];
-        //echo "Usuário Logado";
-        header('location: ../teste.php');
+    if(!is_null($usuario)) {
+        $erro = false;
+      if(empty($email)) {
+          $erro =  1;
+      } else if (empty($senha)) {
+          $erro =  1;
+      }
+      if ($erro){
+          echo "<script type='text/javascript'>alert('Email ou senha em branco')</script>";
+      }else if(password_verify($senha, $usuario['senha'])) {
+          if(!isset($_SESSION)) session_start();
+          $_SESSION['usuario'] = $usuario['id'];
+          header('location: ../teste.php');
+      } else {
+          echo "<script type='text/javascript'>alert('Email ou senha incorretos')</script>";
+      }
     } else {
-        //echo "Falha ao logar! Senha ou e-mail incorretos";
-        echo "<script type='text/javascript'>alert('Email ou senha incorretos')</script>";
+        echo "<script type='text/javascript'>alert('Usuário não encontrado')</script>";
     }
-    
  }
 
 
 ?>
+
+
+
+
     
 <!DOCTYPE html>
 <html lang="pt-br">
