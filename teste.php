@@ -83,7 +83,7 @@ if(!isset($_SESSION['usuario']))
             </li>
  
              <li class="nav-item">
-               <a class="nav-link rounded-circle"  id="login" href="php/logout.php">logout</a>
+               <a class="nav-link rounded-circle"  href="php/logout.php">logout</a>
              </li>
             
 
@@ -554,6 +554,7 @@ if(!isset($_SESSION['usuario']))
                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                    <a href="#"><i class="fab fa-twitter"></i></a>
                    <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-whatsapp"></i></a>
                    
                    
                 </div>
@@ -595,6 +596,8 @@ if(!isset($_SESSION['usuario']))
 <script src="js/owl.carousel.min.js"></script>
 <!-- main -->
 <script src="js/main.js"></script>
+<!--botao-->
+<script src="js/botao.js"></script>
 
 <!-- Live Style Switcher - demo only -->
 <script src="js/styleSwitcher.js"></script>

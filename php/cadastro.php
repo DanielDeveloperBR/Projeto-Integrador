@@ -14,6 +14,7 @@ if(count($_POST) > 0) {
     $erro = false;
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
+    $reptir_senha = $_POST['repetir_senha'];
     $email = $_POST['email'];
     $numero = $_POST['numero'];
     $complemento = $_POST['complemento'];
@@ -35,12 +36,14 @@ if(empty($nome)) {
     $erro = "Preencha o bairro";
 } else if(empty($cidade)) {
     $erro = "Preencha a cidade";
-}
-    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
+} else {
+    $senha = $_POST['senha'];
+    $repetir_senha = $_POST['repetir_senha'];
 
-    if($erro) {
-        echo "<p><b>ERRO: $erro</b></p>";
+    if ($senha != $repetir_senha) {
+        $erro = "As senhas digitadas não são iguais";
     } else {
+        $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
         $sql_code = "INSERT INTO tb_cadastros (nome, senha, numero, complemento, bairro, cidade, email)
         VALUES ('$nome','$senha','$numero','$complemento','$bairro','$cidade','$email')";
         $deu_certo = $mysqli->query($sql_code) or die($mysqli->error);
@@ -50,9 +53,12 @@ if(empty($nome)) {
             header("Location: login.php?sair='sair'");
         }
     }
-
 }
 
+if($erro) {
+    echo "<p><b>ERRO: $erro</b></p>";
+}
+}
 
 ?>
 <!DOCTYPE html>
@@ -73,7 +79,11 @@ if(empty($nome)) {
         </p>
         <p>
             <label>Senha:</label>
-            <input value="<?php if(isset($_POST['senha'])) echo $_POST['senha']; ?>" name="senha" type="text">
+            <input value="<?php if(isset($_POST['senha'])) echo $_POST['senha']; ?>" name="senha" type="password">
+        </p>
+        <p>
+            <label>Repetir Senha:</label>
+            <input value="<?php if(isset($_POST['repetir_senha'])) echo $_POST['repetir_senha']; ?>" name="repetir_senha" type="password">
         </p>
         <p>
             <label>Email:</label>
@@ -81,21 +91,22 @@ if(empty($nome)) {
         </p>
       
         <p>
-            <label>Número:</label>
-            <input value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>"  name="numero" type="text">
-        </p>
         <p>
-            <label>Complemento:</label>
+            <label>Endereço:</label>
             <input value="<?php if(isset($_POST['complemento'])) echo $_POST['complemento']; ?>"  name="complemento" type="text">
         </p>
-        <p>
-            <label>Bairro:</label>
-            <input value="<?php if(isset($_POST['bairro'])) echo $_POST['bairro']; ?>"  name="bairro" type="text">
+            <label>Número:</label>
+            <input value="<?php if(isset($_POST['numero'])) echo $_POST['numero']; ?>"  name="numero" type="number">
         </p>
         <p>
             <label>Cidade:</label>
             <input value="<?php if(isset($_POST['cidade'])) echo $_POST['cidade']; ?>"  name="cidade" type="text">
         </p>
+        <p>
+            <label>Bairro:</label>
+            <input value="<?php if(isset($_POST['bairro'])) echo $_POST['bairro']; ?>"  name="bairro" type="text">
+        </p>
+       
         <p>
         <button type="submit" class="log" id="logar" style="display: inline-block;">Prosseguir</button>
         <a href="../index.html" class="log" id="logar" style="display: inline-block;">voltar</a>
