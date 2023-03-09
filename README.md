@@ -1,32 +1,31 @@
-# 💻 Project
+# 💻 Projeto
 
-Live demo: https://danieldeveloperbr.github.io/Projeto-Integrador/
+Demonstração ao vivo: https://danieldeveloperbr.github.io/Projeto-Integrador/
 
-In this project, I'm developing a landing page for smartwatch store.
+Neste projeto, estou desenvolvendo uma landing page para loja de venda de sonhos.
 
-To achieve the final result, I used HTML, CSS, Bootstrap and tons and tons of coffee :D
+Para chegar ao resultado final, usei HTML, CSS, Bootstrap e muito e muito café :D
 
-# Getting Started
+# Começando
 
-In order to open and edit this project, you need to have a Code Editor. (I used Visual Studio Code, but you can choose your favorite.) Once that is done, download the file and open it in your editor. If you have Visual Code Studio, you can right click the file and select the "Open with Code" option.
+Para abrir e editar este projeto, você precisa ter um Editor de Código. (Usei o Visual Studio Code, mas você pode escolher o seu preferido.) Feito isso, baixe o arquivo e abra-o em seu editor. Se você tiver o Visual Code Studio, clique com o botão direito do mouse no arquivo e selecione a opção "Abrir com código".
 
-If you wish to clone this repository using a terminal, type the following command:
+Se você deseja clonar este repositório usando um terminal, digite o seguinte comando:
 
 $ git clone https://danieldeveloperbr.github.io/Projeto-Integrador/
 
-# Technologies
+# Tecnologias
 
-This project was developed with the following technologies:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML, CSS and Bootstrap
+- HTML, CSS e Bootstrap
 <!-- - [Expo][expo] -->
 
-# Features
+#  Características
 
-- WhatsApp's API for the contact number. Meaning that people can text you via WhatsApp right away just by clicking the contact button.
-- Style switcher (multiple colors for demo showcases) and a Light and Dark mode as well. Mainly for developers who want to use it as a template.
+- API do WhatsApp para o número de contato. O que significa que as pessoas podem enviar mensagens de texto para você via WhatsApp imediatamente, apenas clicando no botão de contato.
 
-# Gallery
+
 
 
 
