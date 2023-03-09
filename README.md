@@ -1,4 +1,4 @@
-# 💻 Projeto
+# 💻 Projeto Integrador
 
 Demonstração ao vivo: https://danieldeveloperbr.github.io/Projeto-Integrador/
 
