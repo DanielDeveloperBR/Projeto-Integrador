@@ -465,7 +465,7 @@ if(!isset($_SESSION['usuario']))
          <input type="hidden" name="_captcha" value="false" style="display: none;">
          <!--Desabilitar captcha-->
          <!--não ir para outra pagina-->
-         <input type="hidden" name="_next" value="http://localhost/projeto-sonho/teste.php" style="display: nome;">
+         <input type="hidden" name="_next" value="http://localhost/projeto-integrador/teste.php" style="display: nome;">
          <!--não ir para outra pagina-->
          <!--Evitar spawm-->
          <input type="text" name="_honey" style="display:none">
@@ -567,19 +567,6 @@ if(!isset($_SESSION['usuario']))
  </footer>
  <!-- Footer Section End -->
 
-<!-- Live Style Switcher - demo only Start -->
- <div class="style-switcher">
-   
-    <h5>Troca de cores</h5>
-    <ul class="list-unstyled">
-        <li title="crimson" style="background-color: #d70d25" onclick="setActiveStyle('crimson')"></li>
-        <li title="blue" style="background-color: #4948d4" onclick="setActiveStyle('blue')"></li>
-        <li title="indigo" style="background-color: #6400ae" onclick="setActiveStyle('indigo')"></li>
-        <li title="aqua" style="background-color: #05b3b6" onclick="setActiveStyle('aqua')"></li>
-        <li title="black" style="background-color: #222222" onclick="setActiveStyle('black')"></li>
-    </ul>
-  </div>
-<!-- Live Style Switcher - demo only End -->
 <script>
     function Salvar() {
         alert("E-mail enviado com sucesso")
