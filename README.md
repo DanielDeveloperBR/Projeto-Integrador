@@ -1,10 +1,8 @@
 # 💻 Projeto Integrador
 
-Demonstração ao vivo: https://danieldeveloperbr.github.io/Projeto-Integrador/
+O projeto desenvolvido pela equipe de três pessoas, foi criado para uma turma do Senac. Trata-se de um site de venda de sonhos que oferece aos clientes a possibilidade de fazer uma compra através de WhatsApp.
 
-Neste projeto, estou desenvolvendo uma landing page para loja de venda de sonhos.
-
-Para chegar ao resultado final, usei HTML, CSS, Bootstrap e muito e muito café :D
+Veja o Site! https://projeto-sonho.000webhostapp.com/index.html
 
 # Começando
 
@@ -18,7 +16,7 @@ $ git clone https://danieldeveloperbr.github.io/Projeto-Integrador/
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML, CSS e Bootstrap
+- HTML, CSS, PHP e Bootstrap.
 <!-- - [Expo][expo] -->
 
 #  Características
