@@ -1,16 +1,10 @@
 <?php
-
-
 function limpar_texto($str){
     return preg_replace("/[^0-9]/", "", $str);
 }
-
-
 if(count($_POST) > 0) {
-
-
     include('conexao.php');
-   
+
     $erro = false;
     $nome = $_POST['nome'];
     $senha = $_POST['senha'];
@@ -20,9 +14,6 @@ if(count($_POST) > 0) {
     $complemento = $_POST['complemento'];
     $bairro = $_POST['bairro'];
     $cidade = $_POST['cidade'];
-    
-
-
 //Campos que nao podem ser cadastrados em branco!
 if(empty($nome)) {
     $erro = "Preencha o nome";
@@ -62,12 +53,14 @@ if($erro) {
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Cliente</title>
     <link rel="stylesheet" href="../css/user.css">
+    <!-- Ícone da logo-->
+  <link rel="shortcut icon" href="../img/favicon3.ico" type="image/x-icon">
 </head>
 <body>
     
@@ -111,8 +104,6 @@ if($erro) {
         <button type="submit" class="log" id="logar" style="display: inline-block;">Prosseguir</button>
         <a href="../index.html" class="log" id="logar" style="display: inline-block;">voltar</a>
 </p>
-        
-
     </form>
 </body>
 </html>

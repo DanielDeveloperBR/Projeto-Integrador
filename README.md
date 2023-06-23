@@ -2,7 +2,11 @@
 
 O projeto desenvolvido pela equipe de três pessoas, foi criado para uma turma do Senac. Trata-se de um site de venda de sonhos que oferece aos clientes a possibilidade de fazer uma compra através de WhatsApp.
 
+Fiz um teste de hospedagem e coloquei nesse servidor que é grátis:
+
 Veja o Site! https://projeto-sonho.000webhostapp.com/index.html
+
+no github para abrir: https://danieldeveloperbr.github.io/Projeto-Integrador/
 
 # Começando
 
@@ -16,10 +20,10 @@ $ git clone https://danieldeveloperbr.github.io/Projeto-Integrador/
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML, CSS, PHP e Bootstrap.
-<!-- - [Expo][expo] -->
+- HTML, CSS, JS, PHP e Bootstrap.
+<!--[Expo][expo] -->
 
-#  Características
+# Características
 
 - API do WhatsApp para o número de contato. O que significa que as pessoas podem enviar mensagens de texto para você via WhatsApp imediatamente, apenas clicando no botão de contato.
 

@@ -29,7 +29,7 @@ if (isset($_POST['email'])) {
       }else if(password_verify($senha, $usuario['senha'])) {
           if(!isset($_SESSION)) session_start();
           $_SESSION['usuario'] = $usuario['id'];
-          header('location: ../teste.php');
+          header('location: ../index.php');
       } else {
           echo "<script type='text/javascript'>alert('Email ou senha incorretos')</script>";
       }
@@ -40,11 +40,6 @@ if (isset($_POST['email'])) {
 
 
 ?>
-
-
-
-
-    
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -52,6 +47,8 @@ if (isset($_POST['email'])) {
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/user.css">
+    <!-- Ícone da logo-->
+  <link rel="shortcut icon" href="../img/favicon3.ico" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>

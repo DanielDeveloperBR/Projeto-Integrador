@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title>Que sonho bom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/responsive.css">
   <!-- Default skin -->
   <link rel="stylesheet" href="css/skins/crimson.css">
+  <!-- Ícone da logo-->
+  <link rel="shortcut icon" href="img/favicon3.ico" type="image/x-icon">
 
   <!-- Live Style Switcher - demo only -->
   <link rel="stylesheet" title="crimson" class="alternate-style" href="css/skins/crimson.css" disabled>
@@ -27,15 +29,6 @@
 
 </head>
 <body>
-
-  <!-- Preloader Start  -->
-   <div class="preloader">
-      <div class="loader">
-      </div>
-   </div>
-  <!-- Preloader End  -->
-
- 
  <!-- Header Section Start -->
  <header class="header fixed-top">
     <div class="container-fluid">
@@ -85,20 +78,13 @@
 
  <!-- Home Section Start  -->
  <section class="home-section" id="home">
-    <div class="bg-shapes">
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-       <div></div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="home-content">
                    <h1 class="text-warning">Que Sonho bom</h1>
                    <p>O famoso sonho, mas não um simples sonho, um sonho com recheio de geleias de frutas. Fugindo um pouco dos sabores tradicionais própria. Vem adquirir o seu!</p>
-                   <a href="php/cadastro.php" class="btn mybtn1">Saiba mais</a>
+                   <a href="php/cadastro.php" target="_self" class="btn mybtn1">Saiba mais</a>
                 </div>
             </div>
             <div class="col-lg-6 order-first order-lg-last">
@@ -140,7 +126,6 @@
        </div>
     </div>
  </section>
-
  <!-- Sobre nós Section End -->
 
  <!-- Funcionalidades Section Start  -->
@@ -448,7 +433,7 @@
             </div>
         </div>
         <!--form action="https://formsubmit.co/youremail@gmail.com"  onsubmit="Salvar()" method="POST"-->
-         <form action="https://formsubmit.co/herbert.hpzerro@gmail.com" onsubmit="Salvar()" method="POST">
+         <form action="https://formsubmit.co/herbert.hpzerro@gmail.com" id="formulario" method="POST">
          <!--Desabilitar captcha-->
          <input type="hidden" name="_captcha" value="false" style="display: none;">
          <!--Desabilitar captcha-->
@@ -475,7 +460,7 @@
                    <div class="row">
                       <div class="col-md-12">
                           <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Assunto">
+                            <input type="text" name="assunto" class="form-control" placeholder="Assunto">
                           </div>
                       </div>
                    </div>
@@ -488,7 +473,7 @@
                    </div>
                    <div class="row">
                       <div class="col-md-12">
-                          <button type="submit" class="btn mybtn2">Enviar</button>
+                          <button type="button" id="botao-enviar" class="btn mybtn2">Enviar</button>
                       </div>
                    </div>
                 </form>
@@ -554,11 +539,6 @@
      </div>
  </footer>
  <!-- Footer Section End -->
-<script>
-   function Salvar() {
-       alert("E-mail enviado com sucesso")
-   }
-</script>
 
 <!-- Jquery -->
 <script src="js/jquery.min.js"></script>
@@ -572,6 +552,8 @@
 <script src="js/main.js"></script>
 <!--botao-->
 <script src="js/botao.js"></script>
+<!--formulario dos contatos-->
+<script src="js/formulario.js"></script>
 
 <!-- Live Style Switcher - demo only -->
 <script src="js/styleSwitcher.js"></script>
